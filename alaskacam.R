@@ -152,7 +152,10 @@ auth_as(bot)
 
 print("setup complete")
 # tweet(camera_tweet, mediaPath = "pic.jpg", bypassCharLimit=T)
-post_tweet(status = camera_tweet, media= "pic.jpg", token = bot)
+
+
+post_tweet(status = camera_tweet, media= "pic.jpg", token = bot, media_alt_text = "a view from a camera on one of Alaska's highways")
+
 
 
 ######
