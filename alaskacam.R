@@ -64,7 +64,9 @@ if (info$size < 20000) {
   print("the file size is less than 20KB:")
   
   print(info$size)
-stop()
+# stop()
+  
+  print("no more execution. no errors")
   } else {
 
 
@@ -73,7 +75,7 @@ stop()
     print(info$size)
     
     
-camera_tweet <- str_glue("The view from {camera_to_tweet$Name} taken at {camera_to_tweet$LastUpdated}. 📷 from 511.alaska.gov") 
+camera_tweet <- str_glue("The view from {camera_to_tweet$Name}, taken at {camera_to_tweet$LastUpdated}. 📷 from 511.alaska.gov") 
 
 camera_tweet
 
