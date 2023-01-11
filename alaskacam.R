@@ -1,6 +1,8 @@
 print("top of the file")
 
 
+setwd("projects/alaskacam")
+
 install.packages("readr")
 install.packages("dplyr")
 install.packages('httr')
@@ -55,10 +57,22 @@ random_number <- floor( runif(1)*number_of_cameras)
 camera_to_tweet <- cameras[random_number ,]
 
 download.file(url= camera_to_tweet$Url, "pic.jpg")
-# info <- file.info("pic.jpg")
-# info$size
+info <- file.info("pic.jpg")
+
+if (info$size < 20000) {
+  
+  print("the file size is less than 20KB:")
+  
+  print(info$size)
+stop()
+  } else {
 
 
+    
+    print("the file shoudl be more thank 20KB:")
+    print(info$size)
+    
+    
 camera_tweet <- str_glue("The view from {camera_to_tweet$Name} taken at {camera_to_tweet$LastUpdated}. 📷 from 511.alaska.gov") 
 
 camera_tweet
@@ -156,7 +170,7 @@ print("setup complete")
 
 post_tweet(status = camera_tweet, media= "pic.jpg", token = bot, media_alt_text = "a view from a camera on one of Alaska's highways")
 
-
+}
 
 ######
 
