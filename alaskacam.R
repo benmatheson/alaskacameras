@@ -1,7 +1,7 @@
 print("top of the file")
 
 
-setwd("projects/alaskacam")
+# setwd("projects/alaskacam")
 
 install.packages("readr")
 install.packages("dplyr")
