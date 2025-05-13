@@ -102,7 +102,7 @@ image_blob <- bs_upload_blob("pic.jpeg", clean=FALSE)
 
 #attempting blob
 
-debug(bs_post)
+# debug(bs_post)
 
 bs_post(
   text= camera_tweet,
