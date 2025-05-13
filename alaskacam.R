@@ -105,7 +105,7 @@ set_bluesky_pass(BSKYPASS)
 # debug(bs_post)
 
 bs_post(
-  text= camera_tweet,
+  text= paste0(camera_tweet),
   
   # images = image_blob,
   images = "pic.jpeg",
