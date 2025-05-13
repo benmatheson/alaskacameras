@@ -102,10 +102,13 @@ image_blob <- bs_upload_blob("pic.jpeg", clean=FALSE)
 
 #attempting blob
 
+debug(bs_post)
+
 bs_post(
   text= camera_tweet,
   
-  images = image_blob,
+  # images = image_blob,
+  images = "pic.jpeg",
   
   images_alt = "a picture from alaska's 511 cameras located on highway"
   
