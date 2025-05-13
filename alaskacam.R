@@ -105,7 +105,7 @@ image_blob <- bs_upload_blob("pic.jpeg", clean=FALSE)
 # debug(bs_post)
 
 bs_post(
-  text= camera_tweet,
+  text= paste0(camera_tweet),
   
   # images = image_blob,
   images = "pic.jpeg",
