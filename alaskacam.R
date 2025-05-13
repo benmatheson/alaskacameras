@@ -90,10 +90,12 @@ BSKYPASS <- Sys.getenv("BSKYPASS")
 print("now setting up")
 
 options(httr_oauth_cache=F)
-
+print("now setting user")
 
 set_bluesky_user('alaskacameras.bsky.social')
+print("setting pword")
 set_bluesky_pass(BSKYPASS)
+print("post ---->")
 
 
 #####################################################################################################################################################################################################
@@ -108,7 +110,7 @@ bs_post(
   text= paste0(camera_tweet),
   
   # images = image_blob,
-  images = "pic.jpeg",
+  # images = "pic.jpeg",
   
   images_alt = "a picture from alaska's 511 cameras located on highway"
   
