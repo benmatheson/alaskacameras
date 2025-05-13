@@ -79,8 +79,8 @@ if (info$size < 20000) {
     
 camera_tweet <- str_glue("The view from {camera_to_tweet$Location}, 📷 from 511.alaska.gov") 
 
-camera_tweet
-
+# str(camera_tweet)
+# paste0(camera_tweet)
 #############twitter stuff#########################
 
 
