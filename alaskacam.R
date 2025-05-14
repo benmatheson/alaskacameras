@@ -110,8 +110,8 @@ print("post ---->")
 bs_post(
   text= paste0(camera_tweet),
   
-  # images = image_blob,
-  images = "./pic.jpeg",
+  images = image_blob,
+  # images = "./pic.jpeg",
   
   images_alt = "a picture from alaska's 511 cameras located on highway"
   
