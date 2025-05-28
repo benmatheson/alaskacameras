@@ -98,7 +98,7 @@ set_bluesky_pass(BSKYPASS)
 
 
  image_path <- file.path(getwd(), "pic.jpg") 
-  print ("my image page is: , image_path)
+  print (paste0("my image page is:" , image_path))
 
   print(paste("File exists:", file.exists(image_path)))
 
