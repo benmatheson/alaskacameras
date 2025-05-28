@@ -100,10 +100,11 @@ set_bluesky_pass(BSKYPASS)
  image_path <- file.path(getwd(), "pic.jpg") 
   print (paste0("my image page is:" , image_path))
 
-  print(paste("File exists:", file.exists(image_path)))
+  print(paste("File fiull path exists:", file.exists(image_path)))
 
+  print(paste("File normal path exists:", file.exists("pic.jpeg")))
 
-print("create image blob ---->")
+# print("create image blob ---->")
 
 
 #####################################################################################################################################################################################################
