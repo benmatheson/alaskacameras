@@ -115,7 +115,8 @@ bs_post(
     images = c("pic.jpeg"),
 
   
-  images_alt = "a picture from alaska's 511 cameras located on highway"
+  images_alt = "a picture from alaska's 511 cameras located on highway", 
+  embed=FALSE
   
 )
 
