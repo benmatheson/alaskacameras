@@ -120,7 +120,7 @@ bs_post(
   
   # images = image_blob,
   # images = "pic.jpeg",
-    images = c("pic.jpeg"),
+    # images = c("pic.jpeg"),
   images = "/home/runner/work/alaskacameras/alaskacameras/pic.jpg",
 
   
