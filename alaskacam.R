@@ -111,7 +111,9 @@ bs_post(
   text= paste0(camera_tweet),
   
   # images = image_blob,
-  images = "pic.jpeg",
+  # images = "pic.jpeg",
+    images = c("pic.jpeg"),
+
   
   images_alt = "a picture from alaska's 511 cameras located on highway"
   
