@@ -121,6 +121,7 @@ bs_post(
   # images = image_blob,
   # images = "pic.jpeg",
     images = c("pic.jpeg"),
+  images = "/home/runner/work/alaskacameras/alaskacameras/pic.jpg",
 
   
   images_alt = "a picture from alaska's 511 cameras located on highway", 
