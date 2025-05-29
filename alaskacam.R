@@ -109,7 +109,7 @@ set_bluesky_pass(BSKYPASS)
 
 #####################################################################################################################################################################################################
 
-# image_blob <- bs_upload_blob("pic.jpeg", clean=FALSE)
+image_blob <- bs_upload_blob("pic.jpeg", clean=FALSE)
 print("post ---->")
 
 #attempting blob
@@ -119,8 +119,8 @@ print("post ---->")
 bs_post(
   text= paste0(camera_tweet),
   
-  # images = image_blob,
-  images = "pic.jpeg",
+  images = image_blob,
+  # images = "pic.jpeg",
     # images = c("pic.jpeg"),
 
   
