@@ -109,7 +109,7 @@ set_bluesky_pass(BSKYPASS)
 
 #####################################################################################################################################################################################################
 
-image_blob <- bs_upload_blob("pic.jpeg", clean=TRUE)
+image_blob <- bs_upload_blob("pic.jpeg", user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=TRUE)
 print("post ---->")
 
 #attempting blob
@@ -126,7 +126,6 @@ bs_post(
   
   # images = "/home/runner/work/alaskacameras/alaskacameras/pic.jpg",
 
-  
   images_alt = "a picture from alaska's 511 cameras located on highway", 
   embed=FALSE
   
