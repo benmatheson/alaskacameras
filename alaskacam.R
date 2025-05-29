@@ -121,11 +121,11 @@ bs_post(
   user='alaskacameras.bsky.social', 
   pass=BSKYPASS,
   # images = image_blob,
-  images = "pic.jpg",
+  # images = "pic.jpg",
     # images = c("pic.jpeg"),
 
   
-  # images = "/home/runner/work/alaskacameras/alaskacameras/pic.jpg",
+  images = "/home/runner/work/alaskacameras/alaskacameras/pic.jpg",
 
   images_alt = "a picture from alaska's 511 cameras located on highway", 
   embed=FALSE
