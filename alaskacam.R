@@ -109,7 +109,7 @@ set_bluesky_pass(BSKYPASS)
 
 #####################################################################################################################################################################################################
 
-image_blob <- bs_upload_blob("pic.jpeg", user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=TRUE)
+# image_blob <- bs_upload_blob("pic.jpeg", user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=TRUE)
 print("post ---->")
 
 #attempting blob
