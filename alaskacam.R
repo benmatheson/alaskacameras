@@ -109,10 +109,10 @@ print("create image blob ---->")
 
 #####################################################################################################################################################################################################
 
-image_blob <- bs_upload_blob('/home/runner/work/alaskacameras/alaskacameras/pic.jpg', user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=FALSE)
+# image_blob <- bs_upload_blob('/home/runner/work/alaskacameras/alaskacameras/pic.jpg', user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=FALSE)
 
-print("printing blob -")
-print(image_blob)
+# print("printing blob -")
+# print(image_blob)
 
 
   print("post ---->")
@@ -123,9 +123,14 @@ print(image_blob)
 
 bs_post(
   text= paste0(camera_tweet),
-  user='alaskacameras.bsky.social', 
-  pass=BSKYPASS,
-  images = image_blob,
+  # user='alaskacameras.bsky.social', 
+  # pass=BSKYPASS,
+
+
+  images = "./pic.jpeg",
+
+
+  # images = image_blob,
   # images = "pic.jpg",
     # images = c("pic.jpeg"),
 
