@@ -142,7 +142,13 @@ bs_post(
   
 )
 
+print ("tracing now")
 
+traceback()
+
+
+print (".tracing now")
+.traceback()
 # bs_post(
 #   text = "a picture from alaska's 511 cameras",
 #   images = c('pics/pic.jpeg'),
