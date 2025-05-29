@@ -60,9 +60,9 @@ random_number <- floor( runif(1)*number_of_cameras)
 camera_to_tweet <- cameras[random_number ,]
 
 download.file(url= camera_to_tweet$Url, "pic.jpeg")
-info <- file.info("pic.jpeg")
+picinfo <- file.info("pic.jpeg")
 
-if (info$size < 20000) {
+if (picinfo$size < 20000) {
   
   print("the file size is less than 20KB:")
   
@@ -74,7 +74,7 @@ if (info$size < 20000) {
 
     
     print("the file shoudl be more thank 20KB:")
-    print(info$size)
+    print(picinfo$size)
     
     
 camera_tweet <- str_glue("The view from {camera_to_tweet$Location}, 📷 from 511.alaska.gov") 
