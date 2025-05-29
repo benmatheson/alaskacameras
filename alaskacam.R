@@ -122,7 +122,7 @@ print("create image blob ---->")
 # debug(bs_post)
 
 bs_post(
-  text= paste0(camera_tweet)
+  text = paste0(camera_tweet)
   # user='alaskacameras.bsky.social', 
   # pass=BSKYPASS,
 
@@ -137,7 +137,7 @@ bs_post(
   
   # images = c('/home/runner/work/alaskacameras/alaskacameras/pic.jpg'),
 
-  images_alt = "a picture from alaska's 511 cameras located on highway", 
+  images_alt = "a picture from alaska's 511 cameras located on highway" 
   # embed=FALSE
   
 )
