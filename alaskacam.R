@@ -59,8 +59,8 @@ random_number <- floor( runif(1)*number_of_cameras)
 
 camera_to_tweet <- cameras[random_number ,]
 
-download.file(url= camera_to_tweet$Url, "pic.jpg")
-info <- file.info("pic.jpg")
+download.file(url= camera_to_tweet$Url, "pic.jpeg")
+info <- file.info("pic.jpeg")
 
 if (info$size < 20000) {
   
