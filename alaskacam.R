@@ -109,7 +109,7 @@ print("create image blob ---->")
 
 #####################################################################################################################################################################################################
 
-image_blob <- bs_upload_blob('/home/runner/work/alaskacameras/alaskacameras/pic.jpg', user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=TRUE)
+image_blob <- bs_upload_blob('/home/runner/work/alaskacameras/alaskacameras/pic.jpg', user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=FALSE)
 
 print("printing blob -")
 print(image_blob)
