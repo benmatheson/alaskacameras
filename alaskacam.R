@@ -122,7 +122,7 @@ print("create image blob ---->")
 # debug(bs_post)
 
 bs_post(
-  text = paste0(camera_tweet)
+  text = paste0(camera_tweet),
   # user='alaskacameras.bsky.social', 
   # pass=BSKYPASS,
 
