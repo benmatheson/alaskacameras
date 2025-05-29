@@ -104,13 +104,18 @@ set_bluesky_pass(BSKYPASS)
 
   print(paste("File normal path exists:", file.exists("pic.jpeg")))
 
-# print("create image blob ---->")
+print("create image blob ---->")
 
 
 #####################################################################################################################################################################################################
 
-# image_blob <- bs_upload_blob("pic.jpeg", user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=TRUE)
-print("post ---->")
+image_blob <- bs_upload_blob('/home/runner/work/alaskacameras/alaskacameras/pic.jpg', user='alaskacameras.bsky.social', pass=BSKYPASS,  clean=TRUE)
+
+print("printing blob -")
+print(image_blob)
+
+
+  print("post ---->")
 
 #attempting blob
 
@@ -120,12 +125,12 @@ bs_post(
   text= paste0(camera_tweet),
   user='alaskacameras.bsky.social', 
   pass=BSKYPASS,
-  # images = image_blob,
+  images = image_blob,
   # images = "pic.jpg",
     # images = c("pic.jpeg"),
 
   
-  images = c('/home/runner/work/alaskacameras/alaskacameras/pic.jpg'),
+  # images = c('/home/runner/work/alaskacameras/alaskacameras/pic.jpg'),
 
   images_alt = "a picture from alaska's 511 cameras located on highway", 
   embed=FALSE
