@@ -120,8 +120,8 @@ bs_post(
   text= paste0(camera_tweet),
   user='alaskacameras.bsky.social', 
   pass=BSKYPASS,
-  images = image_blob,
-  # images = "pic.jpeg",
+  # images = image_blob,
+  images = "pic.jpeg",
     # images = c("pic.jpeg"),
 
   
