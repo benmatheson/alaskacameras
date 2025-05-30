@@ -11,7 +11,10 @@ install.packages("stringr")
 # devtools::install_github("jrowen/twitteR", ref = "oauth_httr_1_0")
 
 install.packages("jsonlite")
-install.packages('bskyr')
+
+# install.packages('bskyr')
+
+install.packages('devtools')
 # install.packages('pak')
 
 # install.package("ggplot2")
@@ -23,7 +26,7 @@ library(jsonlite)
 # library(twitteR)
 library(stringr)
 # library(pak)
-library(bskyr)
+
 library(dplyr)
 
 # pak::pak('christopherkenny/bskyr')
@@ -31,7 +34,18 @@ library(dplyr)
 
 print("afterloading")
 
-print("after the library")
+print("loading devtools")
+
+library(devtools)
+
+print("old versino of bksy")
+
+install_version("bskyr", version = "0.2.0", repos = "http://cran.us.r-project.org")
+
+
+library(bskyr)
+
+print("after the librarys, including bsky")
 
 
 DOT_KEY <- Sys.getenv("DOT_KEY")
